@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+{%load static%}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <script type="text/javascript" src="{% static 'bootstrap/js/jquery-3.6.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+    <title>Домашняя</title>
+</head>
+
+<body class="home">
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <h1>SmartFilms</h1>
+    <form class="search" action="search.html" method="get">
+        <input type="text" name="search" placeholder="Search" class="input"/>
+    </form>
+    <ul class="nav ">
+        <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8080/myapp/home/"> Home </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8080/myapp/contacts/"> Contacts </a>
+        </li>
+    </ul>
+</nav>
+
+{% block block_a %}
+<div class="contaner">
+    <div class="row justify-content-center">
+    </div>
+    <div class="row">
+        <div class="home">
+            <form class="choice" action="fest.html" method="get">
+                {% for k in res %}
+                <p><input class="btn btn-secondary btn-lg" type="submit" name="category" value="{{k}}"></p>
+                {%endfor%}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+</body>
+</html>

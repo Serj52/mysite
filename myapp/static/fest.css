@@ -1,0 +1,32 @@
+
+
+
+
+
+
+div.fest {
+    background-color:rgba(122, 146, 143, 0.92);
+    width:300px;
+    height:100px;
+}
+
+
+input {
+    color:rgba(177, 14, 75, 0.92);
+    background-color:rgb(171, 173, 141)
+
+}
+
+
+p.fest {
+     background-color:rgba(169, 87, 87, 0.92);
+     height:30px;
+     width:200px;
+}
+
+
+
+body.fest {
+
+    background-color:rgb(123, 158, 179);
+}

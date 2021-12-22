@@ -1,0 +1,79 @@
+.contaner {
+            margin-top: 50px;
+            margin-right:50px;
+            margin-left:50px;
+           }
+
+
+
+h1 {
+    color: rgb(61, 72, 76);
+    font-family: Cambria, sherif;
+    text-align:center;
+}
+
+
+h3 {
+    color: rgb(61, 72, 76);
+    font-family: Cambria, sherif;
+}
+
+
+form.search {
+    text-align:center;
+}
+
+
+body.fest {
+    background-color:rgb(123, 158, 179);
+}
+
+
+p.home {
+     background-color:rgba(169, 87, 87, 0.92);
+     height:30px;
+     width:200px;
+}
+
+
+p.fest {
+     background-color:rgba(169, 87, 87, 0.92);
+     height:30px;
+     width:200px;
+}
+
+
+div.home {
+    width:150px;
+    height:180px;
+}
+
+
+input.input {
+       border-radius:15px;
+       padding-left:10px;
+}
+
+
+dd {
+    padding-top:2px;
+    padding-bottom:30px;
+}
+
+
+input[type=text]:focus {
+    width:100%;
+}
+
+input [type=submit] {
+    cursor: pointer;
+    padding:16px 32px;
+    background-color: rgb(93, 122, 160);
+}
+
+form{
+    display:inline;
+}
+
+p{
+    display:inline-block;}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% extends "home.html" %}
+{%load static%}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'base_film.css' %}"/>
+    <title>О фильмах</title>
+</head>
+
+<h1> Кино </h1>
+<body>
+
+{% block block_a %}
+<div class="contaner">
+    <form action="fest.html" method="get">
+        <dl>
+            {% for k in res %}
+            <dt><b>{{k}} ({{k.year}}г) <i>реж {{k.producer}} </i></b></dt>
+            <dd>Содержание. Содержание Содержание.Содержание.
+                Содержание.Содержание.Содержание.Содержание.Содержание.
+                Содержание.Содержание.Содержание.Содержание.Содержание.
+                Содержание.Содержание.Содержание.
+            </dd>
+            {%endfor%}
+
+        </dl>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

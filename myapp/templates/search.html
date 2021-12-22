@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% extends "home.html" %}
+<head>
+    <meta charset="UTF-8">
+
+    <title>Результат поиска</title>
+
+</head>
+
+
+<body>
+
+{% block block_a %}
+    <div class="contaner">
+    {{res}} ({{res.year}}г) <i>реж {{res.producer}}</i>
+        {% endblock %}
+    </div>
+    </body>
+</html>

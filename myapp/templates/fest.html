@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% extends "home.html" %}
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Фестивальное</title>
+
+</head>
+
+<body class="fest">
+{% block block_a %}
+<div class="contaner">
+    <h1>Фестивали</h1>
+    <div class="row justify-content-center">
+        <form action="base_film.html" method="get">
+            {% for k in res %}
+            <p><input class="btn btn-secondary btn-lg" type="submit" name="category" value="{{k}}"></p>
+            {%endfor%}
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+</body>
+</html>
